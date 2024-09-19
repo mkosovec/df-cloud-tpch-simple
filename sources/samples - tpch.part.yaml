@@ -1,0 +1,6 @@
+---
+source_name: "Samples - tpch.part"
+source_query: "select * from tpch.part"
+channels:
+- output_name: "Reporting - TPCH OBT"
+  output_source_name: "Auto-ML Demo - tpch.part"

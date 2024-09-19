@@ -1,0 +1,18 @@
+---
+source_name: "Samples - tpch.customer"
+source_query: "select * from tpch.customer"
+channels:
+- output_name: "Reporting - TPCH OBT"
+  output_source_name: "Auto-ML Demo - tpch.customer"
+  - name: "customer_nation"
+    expression: "[Samples - tpch.nation].n_name"
+  - name: "customer_nation_comment"
+    expression: "[Samples - tpch.nation].n_comment"
+  - name: "customer_nation_key"
+    expression: "[Samples - tpch.nation].n_nationkey"
+  - name: "customer_region"
+    expression: "[Samples - tpch.region].r_name"
+  - name: "customer_region_comment"
+    expression: "[Samples - tpch.region].r_comment"
+  - name: "customer_region_key"
+    expression: "[Samples - tpch.region].r_regionkey"

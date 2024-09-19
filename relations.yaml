@@ -1,0 +1,10 @@
+---
+  expression: "[Related].n_nationkey = [This].c_nationkey"
+  expression: "[This].l_orderkey = [Related].o_orderkey"
+  expression: "[This].partsupp_pkey = [Related].s_key"
+  expression: "[This].n_nationkey = [Related].nation_key"
+  expression: "[This].n_nationkey = [Related].s_nationkey"
+  expression: "[This].n_regionkey = [Related].r_regionkey"
+  expression: "[This].o_custkey = [Related].c_custkey"
+  expression: "[This].ps_partkey = [Related].p_partkey"
+  expression: "[This].s_suppkey = [Related].ps_suppkey"

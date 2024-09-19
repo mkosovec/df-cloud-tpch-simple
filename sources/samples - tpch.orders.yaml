@@ -1,0 +1,23 @@
+---
+source_name: "Samples - tpch.orders"
+source_query: "select * from tpch.orders"
+channels:
+- output_name: "Reporting - TPCH OBT"
+  output_source_name: "Auto-ML Demo - tpch.orders"
+  output_source_columns:
+  - name: "customer"
+    expression: "[Samples - tpch.customer].c_name"
+  - name: "customer_address"
+    expression: "[Samples - tpch.customer].c_address"
+  - name: "customer_comment"
+    expression: "[Samples - tpch.customer].c_comment"
+  - name: "customer_market_segment"
+    expression: "[Samples - tpch.customer].c_mktsegment"
+  - name: "customer_nation_comment"
+    expression: "[Samples - tpch.nation].n_comment"
+  - name: "customer_phone"
+    expression: "[Samples - tpch.customer].c_phone"
+  - name: "customer_region"
+    expression: "[Samples - tpch.region].r_name"
+  - name: "customer_region_comment"
+    expression: "[Samples - tpch.region].r_comment"

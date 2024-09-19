@@ -1,0 +1,13 @@
+---
+output_name: "ML Training - LineItem by Nation and Receipt Date"
+output_package_parameters:
+  table_name: "lineitem_by_nation_date "
+  table_schema: "ml_training"
+output_description: "For AutoML Training"
+columns:
+- name: "line_item_net_price_100"
+  datatype: "integer"
+- name: "nation_key"
+  datatype: "long"
+- name: "Line_item_receipt_date"
+  datatype: "date"

@@ -1,0 +1,10 @@
+---
+output_name: "ML Inference - Nation Revenue Forecast"
+output_package_parameters:
+  view_name: "nation_forecast_in"
+  table_schema: "demo"
+columns:
+- name: "Line_item_receipt_date"
+  datatype: "date"
+- name: "nation_key"
+  datatype: "long"

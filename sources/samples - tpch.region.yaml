@@ -1,0 +1,3 @@
+---
+source_name: "Samples - tpch.region"
+source_query: "select * from tpch.region"
